@@ -1,6 +1,7 @@
 ﻿
 #include "Solutions.h"
 #include "Struct.h"
+#include "BST.h"
 
 using namespace std; //needs standard library in C++
 
@@ -1504,7 +1505,7 @@ cout << endl;
 	
 
 
-	p81 * problem = new p81;
+	p206 * problem = new p206;
 	problem->test();
 	delete problem;
 
