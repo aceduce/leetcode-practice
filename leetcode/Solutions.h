@@ -14,9 +14,10 @@
 # include <ctype.h>
 # include <stack>
 # include "Struct.h"
+# include "BST.h"
+
 
 using namespace std;
-
 
 // declare all the questions
 class Solutions
@@ -334,6 +335,16 @@ public:
 	void test();
 };
 
+class p81 : public Solutions
+{
+public:
+	p81() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	bool search(vector<int>& nums, int target);
+	void test();
+};
+
 class p82 : public Solutions
 {
 public:
@@ -356,6 +367,7 @@ public:
 };
 
 
+
 class p90 : public Solutions
 {
 public:
@@ -366,3 +378,104 @@ public:
 	void test();
 };
 
+
+class p92 : public Solutions
+{
+public:
+	p92() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	ListNode* reverseBetween(ListNode* head, int m, int n);
+	void test();
+};
+
+
+class p94 : public Solutions
+{
+public:
+	p94() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	vector<int> inorderTraversal(TreeNode* root);
+	void test();
+};
+
+class p95 : public Solutions
+{
+public:
+	p95() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	vector<TreeNode*> generateTrees(int n);
+	void test();
+};
+
+class p96 : public Solutions
+{
+public:
+	p96() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int numTrees(int n);
+	void test();
+};
+
+class p97 : public Solutions
+{
+public:
+	p97() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	bool isInterleave(string s1, string s2, string s3);
+	void test();
+};
+
+class p98 : public Solutions
+{
+public:
+	p98() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	bool isValidBST(TreeNode* root);
+	void test();
+};
+
+class p99 : public Solutions
+{
+public:
+	p99() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void recoverTree(TreeNode* root);
+	void test();
+};
+
+class p144 : public Solutions
+{
+public:
+	p144() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	vector<int> preorderTraversal(TreeNode* root);
+	void test();
+};
+
+class p145 : public Solutions
+{
+public:
+	p145() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	vector<int> postorderTraversal(TreeNode* root);
+	void test();
+};
+
+class p206 : public Solutions
+{
+public:
+	p206() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	ListNode* reverseList(ListNode* head);
+	void test();
+};
