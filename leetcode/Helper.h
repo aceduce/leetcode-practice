@@ -13,3 +13,23 @@ void printVec(vector<int> &v) {
 	}
 	cout << " ] " << endl;
 }
+
+template<class T>
+void Print(vector<T> v) {
+	cout << " [ ";
+	for (int i = 0; i < v.size(); i++)
+		cout << v[i] << " ";
+	cout << " ] " << endl;
+}
+
+template<class T>
+void Print2D(vector <vector<T>> v) {
+	cout << " [ " << endl;;
+	for (int i = 0; i < v.size(); i++) {
+		cout << "[ ";
+		for(int j = 0; j < v[i].size(); j++)
+			cout << v[i][j] << " ";
+		cout << " ]";
+	}
+	cout << endl<<" ] " << endl;
+}

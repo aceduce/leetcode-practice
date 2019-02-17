@@ -17,3 +17,23 @@ int* localreturn_var() {
 	*y = 0;
 	return &x; // reutrn y;
 }
+
+void operInIF() {
+	int i = -1;
+	for (int k = 0; k < 10; k++) {
+		cout << " in the loop " << k << endl;
+		if (i++ > 0) // shows in k = 2 loop
+		// if (++i > 0) shows in k = 1 loop
+			cout << "a line" << endl;
+	}
+
+	// every time evalues the if statement, i decreaments
+	for (int k = 0; k < 10; k++) {
+		cout << " in the loop " << k << endl;
+		if (i-- > 0)
+			cout << "a line" << endl;
+		cout << "i = " << i << endl;
+	}
+
+	cout << i << endl;
+}

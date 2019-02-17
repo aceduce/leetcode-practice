@@ -1,5 +1,5 @@
 #include"Solutions.h"
-#include"Helper.h"
+//#include"Helper.h"
 // use two stacks
 vector<int> p145::postorderTraversal(TreeNode* root) {
 	stack<TreeNode*> stack1;
@@ -29,5 +29,5 @@ void p145::test() {
 	Tree t{ head };
 	t.BFT();
 	vector<int> ans = postorderTraversal(head);
-	printVec(ans);
+//	printVec(ans);
 }

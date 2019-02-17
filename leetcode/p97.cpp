@@ -5,6 +5,9 @@
 bool p97::isInterleave(string s1, string s2, string s3) {
 	int l1 = s1.size();
 	int l2 = s2.size();
+	int l3 = s3.size();
+	//if (s1.size() == 0 || s2.size() == 0 || s3.size() == 0) return false;
+	if (l1 + l2 != l3) return false;
 	// dim: l1 + 1 x dim: l2 + 1
 	vector<vector<bool>>DP (l1 +1, vector<bool>(l2 + 1, false));
 	DP[0][0] = true;

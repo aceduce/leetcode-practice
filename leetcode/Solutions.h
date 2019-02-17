@@ -224,6 +224,16 @@ public:
 	void test();
 };
 
+class p51 : public Solutions
+{
+public:
+	p51() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	vector<vector<string>> solveNQueens(int n);
+	void test();
+};
+
 class p54 : public Solutions
 {
 public:
@@ -314,6 +324,48 @@ public:
 	void test();
 };
 
+class p70 : public Solutions
+{
+public:
+	p70() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int climbStairs(int n);
+	void test();
+};
+
+
+class p73 : public Solutions
+{
+public:
+	p73() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void setZeroes(vector<vector<int>>& matrix);
+	void test();
+};
+
+class p76 : public Solutions
+{
+public:
+	p76() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	string minWindow(string s, string t);
+	void test();
+};
+
+
+class p77 : public Solutions
+{
+public:
+	p77() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	vector<vector<int>> combine(int n, int k);
+	void test();
+};
+
 class p78 : public Solutions
 {
 public:
@@ -324,6 +376,15 @@ public:
 	void test();
 };
 
+class p79 : public Solutions
+{
+public:
+	p79() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	bool exist(vector<vector<char>>& board, string word);
+	void test();
+};
 
 class p80 : public Solutions
 {
@@ -366,7 +427,65 @@ public:
 	void test();
 };
 
+class p84 : public Solutions
+{
+public:
+	p84() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int largestRectangleArea(vector<int>& heights);
+	void test();
+};
 
+class p85 : public Solutions
+{
+public:
+	p85() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int maximalRectangle(vector<vector<char>>& matrix);
+	void test();
+};
+
+class p86 : public Solutions
+{
+public:
+	p86() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	ListNode* partition(ListNode* head, int x);
+	void test();
+};
+
+class p87 : public Solutions
+{
+public:
+	p87() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	bool isScramble(string s1, string s2);
+	void test();
+};
+
+class p88: public Solutions
+{
+public:
+	p88() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void merge(vector<int>& nums1, int m, vector<int>& nums2, int n);
+	void test();
+};
+
+class p89 : public Solutions
+{
+public:
+	p89() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	vector<int> grayCode(int n);
+	void test();
+};
 
 class p90 : public Solutions
 {
@@ -378,6 +497,16 @@ public:
 	void test();
 };
 
+class p91 : public Solutions
+{
+public:
+	p91() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int numDecodings(string s);
+	void test();
+};
+
 
 class p92 : public Solutions
 {
@@ -386,6 +515,16 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	ListNode* reverseBetween(ListNode* head, int m, int n);
+	void test();
+};
+
+class p93 : public Solutions
+{
+public:
+	p93() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	vector<string> restoreIpAddresses(string s);
 	void test();
 };
 
@@ -447,6 +586,16 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	void recoverTree(TreeNode* root);
+	void test();
+};
+
+class p100 : public Solutions
+{
+public:
+	p100() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	bool isSameTree(TreeNode* p, TreeNode* q);
 	void test();
 };
 
