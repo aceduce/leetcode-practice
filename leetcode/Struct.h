@@ -26,4 +26,10 @@ private:
 };
 
 
+struct Interval { // used for p56
+	int start;
+	int end;
+	Interval() : start(0), end(0) {}
+	Interval(int s, int e) : start(s), end(e) {}
+};
 

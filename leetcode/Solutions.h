@@ -157,9 +157,10 @@ public:
 	p44() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
-	//vector<vector<int>> permuteUnique(vector<int>& nums);
+	bool isMatch(string s, string p);
 	void test();
 };
+
 
 
 class p45 : public Solutions
@@ -234,6 +235,18 @@ public:
 	void test();
 };
 
+class p52 : public Solutions
+{
+public:
+	p52() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int totalNQueens(int n);
+	bool isValid(vector<int> &q, int value, int pos);
+	void subNQ(vector<int> &q, int &ans, int n, int pos);
+	void test();
+};
+
 class p54 : public Solutions
 {
 public:
@@ -254,6 +267,28 @@ public:
 	void test();
 };
 
+class p56 : public Solutions
+{
+public:
+	p56() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	vector<Interval> merge(vector<Interval>& intervals);
+	vector<Interval> merge_my(vector<Interval>& intervals);
+	void test();
+};
+
+class p57 : public Solutions
+{
+public:
+	p57() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	vector<Interval> insert(vector<Interval>& intervals, Interval newInterval);
+	void test();
+};
+
+
 class p58 : public Solutions
 {
 public:
@@ -271,6 +306,17 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	vector<vector<int>> generateMatrix(int n);
+	void test();
+};
+
+
+class p60 : public Solutions
+{
+public:
+	p60() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	string getPermutation(int n, int k);
 	void test();
 };
 
