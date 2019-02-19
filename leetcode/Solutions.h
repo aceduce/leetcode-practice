@@ -13,6 +13,7 @@
 # include <regex> 
 # include <ctype.h>
 # include <stack>
+#include <sstream>
 # include "Struct.h"
 # include "BST.h"
 
@@ -247,6 +248,19 @@ public:
 	void test();
 };
 
+
+class p53 : public Solutions
+{
+public:
+	p53() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int subMaxSub(int left, int right, vector<int>& num);
+	int maxSubArray(vector<int>& nums);
+	int maxSubArray_DP(vector<int>& nums);
+	void test();
+};
+
 class p54 : public Solutions
 {
 public:
@@ -316,8 +330,21 @@ public:
 	p60() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	void subgetPerm(int n, int k, string & sub, string & ans, int & count);
+	string getPermutation_my(int n, int k);
 	string getPermutation(int n, int k);
 	void test();
+};
+
+class p61 : public Solutions
+{
+public:
+	p61() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	void test();
+	ListNode * rotateRight(ListNode * head, int k);
 };
 
 class p62 : public Solutions
@@ -337,6 +364,28 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid);
+	void test();
+};
+
+class p64 : public Solutions
+{
+public:
+	p64() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int minPathSum(vector<vector<int>>& grid);
+	void test();
+};
+
+class p65 : public Solutions
+{
+public:
+	p65() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	
+	bool isNumber(string s);
+
 	void test();
 };
 
@@ -360,6 +409,18 @@ public:
 	void test();
 };
 
+class p68 : public Solutions
+{
+public:
+	p68() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	
+	void test();
+	vector<string> fullJustify(vector<string>& words, int maxWidth);
+};
+
+
 class p69 : public Solutions
 {
 public:
@@ -380,6 +441,26 @@ public:
 	void test();
 };
 
+class p71 : public Solutions
+{
+public:
+	p71() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	string simplifyPath(string path);
+	void test();
+};
+
+class p72 : public Solutions
+{
+public:
+	p72() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	int minDistance(string word1, string word2);
+	void test();
+};
 
 class p73 : public Solutions
 {
@@ -391,6 +472,25 @@ public:
 	void test();
 };
 
+class p74 : public Solutions
+{
+public:
+	p74() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	bool searchMatrix(vector<vector<int>>& matrix, int target);
+};
+
+class p75 : public Solutions
+{
+public:
+	p75() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void sortColors(vector<int>& nums);
+	void test();
+};
 class p76 : public Solutions
 {
 public:
@@ -645,6 +745,123 @@ public:
 	void test();
 };
 
+class p101 : public Solutions
+{
+public:
+	p101() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	
+	bool isMirror(TreeNode * l, TreeNode * r);
+
+	bool isSymmetric_recur(TreeNode * root);
+
+	bool isSymmetric(TreeNode * root);
+
+	void test();
+};
+
+class p102 : public Solutions
+{
+public:
+	p102() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	vector<vector<int>> levelOrder(TreeNode* root);
+	void test();
+};
+
+class p103 : public Solutions
+{
+public:
+	p103() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	
+	vector<vector<int>> zigzagLevelOrder_DFS(TreeNode * root);
+
+	void test();
+	vector<vector<int>> zigzagLevelOrder(TreeNode * root);
+};
+
+class p104 : public Solutions
+{
+public:
+	p104() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int maxDepth(TreeNode * root);
+	void test();
+
+};
+
+class p105 : public Solutions
+{
+public:
+	p105() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	//TreeNode * subbuilder();
+	TreeNode * subbuilder(vector<int>& preorder, vector<int>& inorder, int in_start, int in_end, int pre_start);
+	TreeNode * buildTree(vector<int>& preorder, vector<int>& inorder);
+	void test();
+
+};
+
+class p106 : public Solutions
+{
+public:
+	p106() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	TreeNode * subbuilder(vector<int>& inorder, vector<int>& postorder, int in_start, int in_end, int post_st);
+	TreeNode * buildTree(vector<int>& inorder, vector<int>& postorder);
+	void test();
+
+};
+
+class p107 : public Solutions
+{
+public:
+	p107() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+
+};
+
+class p108: public Solutions
+{
+public:
+	p108() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+
+};
+
+class p109 : public Solutions
+{
+public:
+	p109() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+
+};
+
+class p110 : public Solutions
+{
+public:
+	p110() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+
+};
+
 class p144 : public Solutions
 {
 public:
@@ -673,4 +890,36 @@ public:
 	}
 	ListNode* reverseList(ListNode* head);
 	void test();
+};
+
+class p212 : public Solutions
+{
+public:
+	p212() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	vector<string> findWords(vector<vector<char>>& board, vector<string>& words);
+	void test();
+};
+
+class p367 : public Solutions
+{
+public:
+	p367() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	
+	void test();
+	bool isPerfectSquare(int num);
+};
+
+class p633 : public Solutions
+{
+public:
+	p633() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	void test();
+	bool judgeSquareSum(int c);
 };

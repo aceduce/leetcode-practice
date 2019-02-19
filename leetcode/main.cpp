@@ -1505,7 +1505,7 @@ cout << endl;
 	
 
 
-	p56* problem = new p56;
+	p105* problem = new p105;
 	problem->test();
 	delete problem;
 

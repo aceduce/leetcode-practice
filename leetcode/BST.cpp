@@ -42,6 +42,7 @@ void Tree::subBFT(TreeNode* root) {
 		}
 		cout << node->val << "->";
 		q.pop();
+		// handling the NULL points
 		if(node->left!= NULL) q.push(node->left);
 		else if (node->left == NULL && node->right != NULL) q.push(NULL);
 

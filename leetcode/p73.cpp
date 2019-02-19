@@ -1,5 +1,5 @@
 #include"Solutions.h"
-#include"Helper.h"
+//#include"Helper.h"
 void p73::setZeroes(vector<vector<int>>& matrix) {
 	if (matrix.size() == 0) return;
 	int row = matrix.size();
@@ -47,6 +47,6 @@ void p73::test() {
 								{ 1,1,1 }
 	};
 	setZeroes(input);
-	Print2D(input);
+	//Print2D(input);
 
 }
