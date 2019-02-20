@@ -23,6 +23,29 @@ vector<vector<int>> p113::pathSum_my(TreeNode* root, int sum) {
 	return ans;
 }
 
+void p113::helper(TreeNode * r, int sum, vector<int> &tmp, vector<vector<int>> &ans) {
+	// like the question before in 112, but here the keep is how to make tmp intact!!
+	if (!r) return;
+	int partial_sum = sum - r->val;
+	if (!r->left && !r->right && partial_sum == 0) {
+		ans.push_back(tmp);
+		ans.back().push_back(r->val); // easier way than 3 lines of codes
+	}
+	tmp.push_back(r->val);
+	helper(r->left, partial_sum, tmp, ans);
+	helper(r->right, partial_sum, tmp, ans);
+	tmp.pop_back();
+}
+
+vector<vector<int>> p113::pathSum(TreeNode* root, int sum) {
+	vector<vector<int>> ans;
+	if (!root) return ans;
+	vector<int> tmp;
+	helper(root, sum, tmp, ans);
+	return ans;
+}
+
+
 void p113::test() {
 	TreeNode * r = new TreeNode{ 5 };
 	r->left = new TreeNode{ 4 };

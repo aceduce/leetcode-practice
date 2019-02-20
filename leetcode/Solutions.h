@@ -892,6 +892,7 @@ public:
 	//void DFS(TreeNode * r, const int & sum, int accum_sum, bool ans);
 	void DFS(TreeNode * r, const int & sum, int accum_sum, bool & ans);
 	bool hasPathSum(TreeNode * root, int sum);
+	bool hasPathSum_DFS(TreeNode * root, int sum);
 	void test();
 
 };
@@ -905,9 +906,170 @@ public:
 	//void DFS(TreeNode * r, int accum_sum, const int sum, vector<vector<int>>& ans, vector<int>& tmp);
 	void DFS(TreeNode * r, int accum_sum, const int sum, vector<vector<int>>& ans, vector<int> tmp);
 	vector<vector<int>> pathSum_my(TreeNode * root, int sum);
+	void helper(TreeNode * r, int sum, vector<int>& tmp, vector<vector<int>>& ans);
 	vector<vector<int>> pathSum(TreeNode * root, int sum);
 	void test();
 
+};
+
+class p114 : public Solutions
+{
+public:
+	p114() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void flatten(TreeNode * root);
+	void test();
+};
+
+class p115 : public Solutions
+{
+public:
+	p115() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int numDistinct(string s, string t);
+	void test();
+};
+
+class p116 : public Solutions
+{
+public:
+	p116() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	Node * connect(Node * root);
+	Node * connect_queue(Node * root);
+	Node * connect_recur(Node * root);
+	//void connect_example(TreeLinkNode * root);
+	void connect_example(Node * root);
+	void test();
+};
+
+class p117 : public Solutions
+{
+public:
+	p117() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p118 : public Solutions
+{
+public:
+	p118() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	vector<vector<int>> generate(int numRows);
+};
+class p119 : public Solutions
+{
+public:
+	p119() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p120 : public Solutions
+{
+public:
+	p120() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p121 : public Solutions
+{
+public:
+	p121() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p122 : public Solutions
+{
+public:
+	p122() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p123 : public Solutions
+{
+public:
+	p123() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p124 : public Solutions
+{
+public:
+	p124() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p125 : public Solutions
+{
+public:
+	p125() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p126 : public Solutions
+{
+public:
+	p126() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p127 : public Solutions
+{
+public:
+	p127() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p128 : public Solutions
+{
+public:
+	p128() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p129 : public Solutions
+{
+public:
+	p129() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p130 : public Solutions
+{
+public:
+	p130() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
 };
 
 
@@ -968,6 +1130,14 @@ public:
 	p437() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+
+	//int helper(TreeNode * r, int sum);
+
+
+
+	int helper_wrong(TreeNode * r, const int sum, int ps, int & ans);
+
+	int true_helper(TreeNode * r, int sum);
 
 	int pathSum(TreeNode * root, int sum);
 
