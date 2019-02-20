@@ -828,6 +828,7 @@ public:
 	p107() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	vector<vector<int>> levelOrderBottom(TreeNode * root);
 	void test();
 
 };
@@ -838,6 +839,8 @@ public:
 	p108() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	TreeNode * helper(vector<int>& num, int left, int right);
+	TreeNode * sortedArrayToBST(vector<int>& nums);
 	void test();
 
 };
@@ -848,6 +851,8 @@ public:
 	p109() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	ListNode * findMiddle(ListNode * h);
+	TreeNode * sortedListToBST(ListNode * head);
 	void test();
 
 };
@@ -858,9 +863,53 @@ public:
 	p110() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	int helper(TreeNode * r);
+	bool isBalanced(TreeNode * root);
 	void test();
 
 };
+
+class p111 : public Solutions
+{
+public:
+	p111() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	int minDepth(TreeNode * root);
+
+	void test();
+
+};
+
+class p112 : public Solutions
+{
+public:
+	p112() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	//void DFS(TreeNode * r, const int sum, int accum_sum);
+	//void DFS(TreeNode * r, const int & sum, int accum_sum, bool ans);
+	void DFS(TreeNode * r, const int & sum, int accum_sum, bool & ans);
+	bool hasPathSum(TreeNode * root, int sum);
+	void test();
+
+};
+
+class p113 : public Solutions
+{
+public:
+	p113() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	//void DFS(TreeNode * r, int accum_sum, const int sum, vector<vector<int>>& ans, vector<int>& tmp);
+	void DFS(TreeNode * r, int accum_sum, const int sum, vector<vector<int>>& ans, vector<int> tmp);
+	vector<vector<int>> pathSum_my(TreeNode * root, int sum);
+	vector<vector<int>> pathSum(TreeNode * root, int sum);
+	void test();
+
+};
+
 
 class p144 : public Solutions
 {
@@ -913,6 +962,18 @@ public:
 	bool isPerfectSquare(int num);
 };
 
+class p437 : public Solutions
+{
+public:
+	p437() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	int pathSum(TreeNode * root, int sum);
+
+	void test();
+};
+
 class p633 : public Solutions
 {
 public:
@@ -922,4 +983,36 @@ public:
 
 	void test();
 	bool judgeSquareSum(int c);
+};
+
+
+class p637 : public Solutions
+{
+public:
+	p637() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	//void DFS(TreeNode * r, vector<double>& ans, int level);
+
+	//void DFS(TreeNode * r, vector<double>& ans, int level, vector<vector<double>> tmp);
+
+	void DFS(TreeNode * r, vector<double>& ans, int level, vector<vector<double>>& tmp);
+
+	void DFS_save(TreeNode * r, vector<double>& ans, int level, vector<int>& size);
+
+	vector<double> averageOfLevels(TreeNode * root);
+
+	void test();
+	
+};
+
+class p889 : public Solutions
+{
+public:
+	p889() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	TreeNode * constructFromPrePost(vector<int>& pre, vector<int>& post);
+	void test();
 };
