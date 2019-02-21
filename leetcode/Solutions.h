@@ -1027,6 +1027,8 @@ public:
 	p124() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	int helper(TreeNode * root, int & ans);
+	int maxPathSum(TreeNode * root);
 	void test();
 };
 
