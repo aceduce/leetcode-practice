@@ -1,5 +1,5 @@
 #include"Solutions.h"
-#include"Helper.h"
+//#include"Helper.h"
 // solvable, but not the best
 void p113::DFS(TreeNode * r, int accum_sum, const int sum, vector<vector<int>> &ans, vector<int> tmp) {
 	if (!r) return;
@@ -59,5 +59,5 @@ void p113::test() {
 	r->left->left->right = new TreeNode{ 2 };
 	vector<vector<int>> ans = pathSum(r, 22);
 	//r->left->right = new TreeNode{ 7 };
-	Print2D(ans);
+	//Print2D(ans);
 }

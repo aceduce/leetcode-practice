@@ -14,6 +14,7 @@
 # include <ctype.h>
 # include <stack>
 #include <sstream>
+//#include "Helper.h"
 # include "Struct.h"
 # include "BST.h"
 
@@ -963,6 +964,8 @@ public:
 	p118() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	vector<vector<int>> generate_simple(int numRows);
+	vector<vector<int>> generate_clever(int numRows);
 	void test();
 	vector<vector<int>> generate(int numRows);
 };
@@ -972,6 +975,7 @@ public:
 	p119() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	vector<int> getRow(int rowIndex);
 	void test();
 };
 
@@ -981,6 +985,7 @@ public:
 	p120() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	int minimumTotal(vector<vector<int>>& triangle);
 	void test();
 };
 
@@ -990,6 +995,8 @@ public:
 	p121() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	int maxProfit(vector<int>& prices);
+	int maxProfit_slow(vector<int>& prices);
 	void test();
 };
 
@@ -1000,6 +1007,7 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	void test();
+	int maxProfit(vector<int>& prices);
 };
 
 class p123 : public Solutions
@@ -1008,6 +1016,8 @@ public:
 	p123() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	//int maxProfit(vector<int>& prices);
+	int maxProfit_twoloops(vector<int>& prices);
 	void test();
 };
 
@@ -1095,6 +1105,19 @@ public:
 	void test();
 };
 
+
+class p188 : public Solutions
+{
+public:
+	p188() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	int maxProfit(int k, vector<int>& prices);
+
+	void test();
+};
+
 class p206 : public Solutions
 {
 public:
@@ -1112,6 +1135,16 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	vector<string> findWords(vector<vector<char>>& board, vector<string>& words);
+	void test();
+};
+
+class p309 : public Solutions
+{
+public:
+	p309() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int maxProfit(vector<int>& prices);
 	void test();
 };
 
@@ -1177,6 +1210,19 @@ public:
 
 	void test();
 	
+};
+
+
+class p714 : public Solutions
+{
+public:
+	p714() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	
+	int maxProfit(vector<int>& prices, int fee);
+
+	void test();
 };
 
 class p889 : public Solutions
