@@ -67,7 +67,7 @@ void p116::connect_example(Node *root) {
 	if (root) q.push_back(root);
 	while (!q.empty()) {
 		deque<Node*> qq;
-		Node* p = nullptr;
+		Node* p = nullptr; // this is the key!! (end doen't touch...)
 		while (!q.empty()) {
 			Node* r = q.front();
 			q.pop_front();

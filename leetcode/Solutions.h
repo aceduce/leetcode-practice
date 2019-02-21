@@ -952,6 +952,8 @@ public:
 	p117() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	Node * connect(Node * root);
+	Node * connect_wrong(Node * root);
 	void test();
 };
 
