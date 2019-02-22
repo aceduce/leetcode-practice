@@ -1142,7 +1142,7 @@ namespace p29 {
 
 
 
-int main() {
+int main_2() {
 	/* Problem 1
 	vector<int> num{ 3,3, 7, 8 };
 	int target = 6;
@@ -1505,7 +1505,7 @@ cout << endl;
 	
 
 
-	p124* problem = new p124;
+	p687* problem = new p687;
 	problem->test();
 	delete problem;
 
@@ -1519,5 +1519,7 @@ cout << endl;
 
 
 
-	system("pause");
+	//system("pause");
+	return 0;
 }
+

@@ -1039,6 +1039,7 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	void test();
+	bool isPalindrome(string s);
 };
 
 class p126 : public Solutions
@@ -1047,6 +1048,7 @@ public:
 	p126() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	vector<vector<string>> findLadders(string beginWord, string endWord, vector<string>& wordList);
 	void test();
 };
 
@@ -1056,6 +1058,10 @@ public:
 	p127() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	int ladderLength(string beginWord, string endWord, vector<string>& wordList);
+	int ladderLength_hashset_BFS(string beginWord, string endWord, vector<string>& wordList);
+	int ladderLength_queue_BFS(string beginWord, string endWord, vector<string>& wordList);
+	int ladderLength_worse(string beginWord, string endWord, vector<string>& wordList);
 	void test();
 };
 
@@ -1065,6 +1071,7 @@ public:
 	p128() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	vector<vector<string>> findLadders(string beginWord, string endWord, vector<string>& wordList);
 	void test();
 };
 
@@ -1086,6 +1093,16 @@ public:
 	void test();
 };
 
+
+class p136 : public Solutions
+{
+public:
+	p136() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	int singleNumber(vector<int>& nums);
+};
 
 class p144 : public Solutions
 {
@@ -1118,6 +1135,26 @@ public:
 	int maxProfit(int k, vector<int>& prices);
 
 	void test();
+};
+
+
+class p193 : public Solutions
+{
+public:
+	p193() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p198 : public Solutions
+{
+public:
+	p198() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	int rob(vector<int>& nums);
 };
 
 class p206 : public Solutions
@@ -1181,6 +1218,21 @@ public:
 	void test();
 };
 
+
+class p543 : public Solutions
+{
+public:
+	p543() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	int helper(TreeNode * r, int & ans);
+
+	int diameterOfBinaryTree(TreeNode * root);
+
+	void test();
+};
+
 class p633 : public Solutions
 {
 public:
@@ -1214,6 +1266,24 @@ public:
 	
 };
 
+class p687 : public Solutions
+{
+public:
+	p687() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	int helper(TreeNode * r, int & ans);
+
+	int longestUnivaluePath_my(TreeNode * root);
+
+	int univaluePath(TreeNode * r, int & ans);
+
+	int longestUnivaluePath(TreeNode * root);
+
+	void test();
+
+};
 
 class p714 : public Solutions
 {

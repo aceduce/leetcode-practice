@@ -1,4 +1,5 @@
 #include"Solutions.h"
+// space O(h); time O(n)
 // no direction graph
 // return only one sided tree: so that it can be connected
 // not very intuitive...
@@ -14,8 +15,10 @@ int p124::helper(TreeNode * root, int & ans) {
 	return root->val + max(leftmax, rightmax);
 }
 int p124::maxPathSum(TreeNode* root) {
-	int ans = 0;
-	ans = helper(root, ans);
+	int ans = INT_MIN; // cannot assign to zero initially
+
+	// ans = helper(root, ans); // typical mistake!
+	helper(root, ans);
 	return ans;
 }
 
