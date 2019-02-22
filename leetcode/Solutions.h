@@ -1071,7 +1071,12 @@ public:
 	p128() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	//void buildback(const string & beginWord, const string & EndWord, const unordered_map<string, vector<string>>& parents, const string parent, vector<string>& curr, vector<vector<string>>& ans);
+	void build_forward(const string & begin, const string & end, vector<string>& tmp, const string cur, const unordered_map<string, vector<string>>& childtree, vector<vector<string>>& ans);
 	vector<vector<string>> findLadders(string beginWord, string endWord, vector<string>& wordList);
+	void buildback_BFSDFS(const string & beginWord, const string & EndWord, const unordered_map<string, vector<string>>& parents, const string parent, vector<string>& curr, vector<vector<string>>& ans);
+	vector<vector<string>> findLadders_BFSDFS(string beginWord, string endWord, vector<string>& wordList);
+	vector<vector<string>> findLadders_BFSDFS_sets(string beginWord, string endWord, vector<string>& wordList);
 	void test();
 };
 
