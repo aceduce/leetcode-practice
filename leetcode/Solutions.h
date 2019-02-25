@@ -1146,6 +1146,7 @@ public:
 	p134() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	int canCompleteCircuit(vector<int>& gas, vector<int>& cost);
 	void test();
 };
 
@@ -1309,7 +1310,43 @@ public:
 	void test();
 };
 
+class p152 : public Solutions
+{
+public:
+	p152() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
 
+class p153 : public Solutions
+{
+public:
+	p153() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+
+class p154 : public Solutions
+{
+public:
+	p154() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+
+class p155 : public Solutions
+{
+public:
+	p155() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
 
 class p169 : public Solutions
 {
@@ -1416,6 +1453,17 @@ public:
 	}
 	int maxProfit(vector<int>& prices);
 	void test();
+};
+
+
+class p337 : public Solutions
+{
+public:
+	p337() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	int rob(TreeNode * root);
 };
 
 class p367 : public Solutions
