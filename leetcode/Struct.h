@@ -49,3 +49,16 @@ public:
 		next = _next;
 	}
 };
+
+class NodeP133 {
+public:
+	int val;
+	vector<NodeP133*> neighbors;
+
+	NodeP133() {}
+
+	NodeP133(int _val, vector<NodeP133*> _neighbors) {
+		val = _val;
+		neighbors = _neighbors;
+	}
+};

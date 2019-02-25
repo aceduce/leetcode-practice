@@ -1,5 +1,5 @@
 #include"Solutions.h"
-#include"Helper.h"
+//#include"Helper.h"
 // my attemp: backtracking
 
 // write an is pen function + backtracking
@@ -104,6 +104,6 @@ void p131::test() {
 	//cout << isPen(s) << endl;
 	vector<vector<string>> ans;
 	ans = partition(s);
-	Print2D(ans);
+	//Print2D(ans);
 
 }

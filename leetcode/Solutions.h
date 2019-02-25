@@ -1086,8 +1086,12 @@ public:
 	p129() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	void DFS(TreeNode * r, int & tmp, int & ans);
+	int sumNumbers(TreeNode * root);
 	void test();
 };
+
+
 
 class p130 : public Solutions
 {
@@ -1095,6 +1099,7 @@ public:
 	p130() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	void solve(vector<vector<char>>& board);
 	void test();
 };
 
@@ -1126,6 +1131,15 @@ public:
 	int minCut(string s);
 };
 
+class p133 : public Solutions
+{
+public:
+	p133() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
 class p136 : public Solutions
 {
 public:
@@ -1143,6 +1157,7 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	int singleNumber(vector<int>& nums);
+	int singleNumber_mode(vector<int>& nums);
 	void test();
 
 };
@@ -1181,6 +1196,17 @@ public:
 };
 
 
+class p189 : public Solutions
+{
+public:
+	p189() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void rotate(vector<int>& nums, int k);
+	void rotate_1(vector<int>& nums, int k);
+	void test();
+};
+
 class p193 : public Solutions
 {
 public:
@@ -1196,8 +1222,19 @@ public:
 	p198() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	int rob_TLE(vector<int>& nums);
 	void test();
 	int rob(vector<int>& nums);
+};
+
+class p199 : public Solutions
+{
+public:
+	p199() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	vector<int> rightSideView(TreeNode * root);
 };
 
 class p206 : public Solutions
@@ -1217,6 +1254,18 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	vector<string> findWords(vector<vector<char>>& board, vector<string>& words);
+	void test();
+};
+
+class p213 : public Solutions
+{
+public:
+	p213() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	int rob(vector<int>& nums);
+
 	void test();
 };
 
