@@ -1140,6 +1140,24 @@ public:
 	void test();
 };
 
+class p134 : public Solutions
+{
+public:
+	p134() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p135 : public Solutions
+{
+public:
+	p135() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
 class p136 : public Solutions
 {
 public:
@@ -1162,6 +1180,60 @@ public:
 
 };
 
+class p138 : public Solutions
+{
+public:
+	p138() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p139 : public Solutions
+{
+public:
+	p139() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p140 : public Solutions
+{
+public:
+	p140() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p141 : public Solutions
+{
+public:
+	p141() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p142 : public Solutions
+{
+public:
+	p142() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p143 : public Solutions
+{
+public:
+	p143() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
 class p144 : public Solutions
 {
 public:
@@ -1182,6 +1254,73 @@ public:
 	void test();
 };
 
+class p146 : public Solutions
+{
+public:
+	p146() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p147 : public Solutions
+{
+public:
+	p147() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p148 : public Solutions
+{
+public:
+	p148() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p149 : public Solutions
+{
+public:
+	p149() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p150 : public Solutions
+{
+public:
+	p150() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+
+class p151 : public Solutions
+{
+public:
+	p151() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+
+
+class p169 : public Solutions
+{
+public:
+	p169() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	void test();
+	int majorityElement(vector<int>& nums);
+};
 
 class p188 : public Solutions
 {
