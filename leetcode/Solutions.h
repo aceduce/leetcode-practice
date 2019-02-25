@@ -1099,6 +1099,33 @@ public:
 };
 
 
+class p131 : public Solutions
+{
+public:
+	p131() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	//bool isPen(string s);
+	bool isPen(string & s);
+	void helper(string s, int index, vector<vector<string>>& ans, vector<string>& tmp);
+	void helper_DP(vector<vector<bool>>& DP, const string s, int index, vector<vector<string>>& ans, vector<string>& tmp);
+	vector<vector<string>> partition(string s);
+	vector<vector<string>> partition_backtrackings(string s);
+	void test();
+};
+
+class p132 : public Solutions
+{
+public:
+	p132() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	bool isPan(string s, int st, int end);
+	int minCut_lessopt(string s);
+	void test();
+	int minCut(string s);
+};
+
 class p136 : public Solutions
 {
 public:
@@ -1107,6 +1134,17 @@ public:
 	}
 	void test();
 	int singleNumber(vector<int>& nums);
+};
+
+class p137 : public Solutions
+{
+public:
+	p137() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int singleNumber(vector<int>& nums);
+	void test();
+
 };
 
 class p144 : public Solutions
