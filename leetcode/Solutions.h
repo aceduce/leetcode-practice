@@ -1048,7 +1048,12 @@ public:
 	p126() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	//void buildback(const string & beginWord, const string & EndWord, const unordered_map<string, vector<string>>& parents, const string parent, vector<string>& curr, vector<vector<string>>& ans);
+	void build_forward(const string & begin, const string & end, vector<string>& tmp, const string cur, const unordered_map<string, vector<string>>& childtree, vector<vector<string>>& ans);
 	vector<vector<string>> findLadders(string beginWord, string endWord, vector<string>& wordList);
+	void buildback_BFSDFS(const string & beginWord, const string & EndWord, const unordered_map<string, vector<string>>& parents, const string parent, vector<string>& curr, vector<vector<string>>& ans);
+	vector<vector<string>> findLadders_BFSDFS(string beginWord, string endWord, vector<string>& wordList);
+	vector<vector<string>> findLadders_BFSDFS_sets(string beginWord, string endWord, vector<string>& wordList);
 	void test();
 };
 
@@ -1071,13 +1076,12 @@ public:
 	p128() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
-	//void buildback(const string & beginWord, const string & EndWord, const unordered_map<string, vector<string>>& parents, const string parent, vector<string>& curr, vector<vector<string>>& ans);
-	void build_forward(const string & begin, const string & end, vector<string>& tmp, const string cur, const unordered_map<string, vector<string>>& childtree, vector<vector<string>>& ans);
-	vector<vector<string>> findLadders(string beginWord, string endWord, vector<string>& wordList);
-	void buildback_BFSDFS(const string & beginWord, const string & EndWord, const unordered_map<string, vector<string>>& parents, const string parent, vector<string>& curr, vector<vector<string>>& ans);
-	vector<vector<string>> findLadders_BFSDFS(string beginWord, string endWord, vector<string>& wordList);
-	vector<vector<string>> findLadders_BFSDFS_sets(string beginWord, string endWord, vector<string>& wordList);
+	
+	int longestConsecutive_concise(vector<int>& nums);
+
 	void test();
+	int longestConsecutive_my(vector<int>& nums); // much more verbose, and not able to use iterator!
+	int longestConsecutive(vector<int>& nums);
 };
 
 class p129 : public Solutions
@@ -1133,11 +1137,15 @@ public:
 
 class p133 : public Solutions
 {
+//using Node = NodeP133;
 public:
 	p133() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	void test();
+	//Node * cloneGraph(Node * node);
+	NodeP133 * cloneGraph(NodeP133 * node);
+	//Node * cloneGraph(Node * node);
 };
 
 class p134 : public Solutions
@@ -1497,6 +1505,19 @@ public:
 	void test();
 };
 
+class p516 : public Solutions
+{
+public:
+	p516() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	int longestPalindromeSubseq(string s);
+
+	int longestPalindromeSubseq_2D_DP(string s);
+
+	void test();
+};
 
 class p543 : public Solutions
 {
