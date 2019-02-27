@@ -1155,6 +1155,7 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	int canCompleteCircuit(vector<int>& gas, vector<int>& cost);
+	int canCompleteCircuit_vect(vector<int>& gas, vector<int>& cost);
 	void test();
 };
 
@@ -1165,6 +1166,7 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	void test();
+	int candy(vector<int>& ratings);
 };
 
 class p136 : public Solutions
@@ -1196,6 +1198,7 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	void test();
+	Node * copyRandomList(Node * head);
 };
 
 class p139 : public Solutions
@@ -1451,6 +1454,21 @@ public:
 	int rob(vector<int>& nums);
 
 	void test();
+};
+
+
+class p234 : public Solutions
+{
+public:
+	p234() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	void test();
+	void reverseLink(ListNode * h);
+	//void reverse(ListNode * h);
+	void reverse(ListNode *& h);
+	bool isPalindrome(ListNode * head);
 };
 
 class p309 : public Solutions
