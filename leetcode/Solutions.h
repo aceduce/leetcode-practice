@@ -1197,8 +1197,11 @@ public:
 	p138() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	NodeP138 * copyRandomList_my(NodeP138 * head);
+	NodeP138 * copyRandomList_Hashmap(NodeP138 * head);
 	void test();
-	Node * copyRandomList(Node * head);
+	//Node * copyRandomList(Node * head);
+	NodeP138 * copyRandomList(NodeP138 * head);
 };
 
 class p139 : public Solutions
@@ -1208,6 +1211,7 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	void test();
+	bool wordBreak(string s, vector<string>& wordDict);
 };
 
 class p140 : public Solutions
@@ -1216,6 +1220,13 @@ public:
 	p140() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	//void subwordBreak(string & s, vector<string>& wordDict, int index, vector<string>& ans, string & tmp);
+	void subwordBreak(string & s, unordered_set<string>& set, int index, vector<string>& ans, string & tmp);
+	void subwordBreak_w_Opt(string & s, unordered_set<string>& set, int index, vector<string>& ans, string & tmp, unordered_map<string, string> used);
+	vector<string> subwordBreak_w_Opt(string & s, unordered_set<string>& set, int index, vector<string>& ans, string & tmp, unordered_map<string, vector<string>>& used);
+	//vector<string> subwordBreak_w_Opt(string s, unordered_set<string>& set, vector<string>& ans, unordered_map<string, vector<string>>& used);
+	vector<string> subwordBreak_w_Opt(string s, unordered_set<string>& set, unordered_map<string, vector<string>>& used);
+	vector<string> wordBreak(string s, vector<string>& wordDict);
 	void test();
 };
 

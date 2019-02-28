@@ -1,5 +1,5 @@
 #include"Solutions.h"
-#include"Helper.h"
+//#include"Helper.h"
 void p189::rotate_1(vector<int>& nums, int k) { // shift arrays, T: O(n), S: O(n) --> the k sub array
 	int n = nums.size();
 	if (n == 0) return;
@@ -27,7 +27,7 @@ void p189::rotate(vector<int>& nums, int k) {
 void p189::test() {
 	vector<int> input{ 1,2,3,4,5,6,7 };
 	rotate(input, 1);
-	Print(input);
+	//Print(input);
 }
 
 // index:

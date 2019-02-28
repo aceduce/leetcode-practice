@@ -64,15 +64,15 @@ public:
 };
 
 
-class Node {
+class NodeP138 {
 public:
 	int val;
-	Node* next;
-	Node* random;
+	NodeP138* next;
+	NodeP138* random;
 
-	Node() {}
+	NodeP138() {}
 
-	Node(int _val, Node* _next, Node* _random) {
+	NodeP138(int _val, NodeP138 * _next, NodeP138 * _random) {
 		val = _val;
 		next = _next;
 		random = _random;
