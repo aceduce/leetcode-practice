@@ -1236,6 +1236,8 @@ public:
 	p141() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	bool hasCycle(ListNode * head);
+	bool hasCycle_hashset(ListNode * head);
 	void test();
 };
 
@@ -1245,6 +1247,7 @@ public:
 	p142() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	ListNode * detectCycle(ListNode * head);
 	void test();
 };
 
@@ -1254,6 +1257,9 @@ public:
 	p143() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	ListNode * findMid(ListNode * h);
+	ListNode * reverse(ListNode * h);
+	void reorderList(ListNode * head);
 	void test();
 };
 
@@ -1283,6 +1289,7 @@ public:
 	p146() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	class LRUCache;
 	void test();
 };
 
@@ -1348,6 +1355,7 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	void test();
+	int findMin(vector<int>& nums);
 };
 
 
