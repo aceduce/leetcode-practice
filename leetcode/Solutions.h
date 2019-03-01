@@ -1300,6 +1300,7 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	void test();
+	ListNode * insertionSortList(ListNode * head);
 };
 
 class p148 : public Solutions
@@ -1308,6 +1309,12 @@ public:
 	p148() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	pair<ListNode*, ListNode*> merge_2(ListNode * l1, ListNode * l2);
+	ListNode * sortList(ListNode * head);
+	ListNode * split(ListNode * head, int n);
+	//ListNode * merge(ListNode * h);
+	ListNode * merge(ListNode * h1, ListNode * h2);
+	ListNode * sortList_merge(ListNode * head);
 	void test();
 };
 
@@ -1317,6 +1324,9 @@ public:
 	p149() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	int gcd(int m, int n);
+	pair<int, int> Slope(const Point & p1, const Point & p2);
+	int maxPoints(vector<Point>& points);
 	void test();
 };
 
@@ -1326,6 +1336,7 @@ public:
 	p150() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	int evalRPN(vector<string>& tokens);
 	void test();
 };
 
@@ -1365,6 +1376,7 @@ public:
 	p154() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	int findMin(vector<int>& nums);
 	void test();
 };
 
