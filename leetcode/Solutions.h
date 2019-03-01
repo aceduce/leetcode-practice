@@ -1347,6 +1347,8 @@ public:
 	p151() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	string reverseWords_inplace(string s);
+	string reverseWords(string s);
 	void test();
 };
 
@@ -1357,6 +1359,7 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	void test();
+	int maxProduct(vector<int>& nums);
 };
 
 class p153 : public Solutions
@@ -1384,6 +1387,7 @@ public:
 class p155 : public Solutions
 {
 public:
+	class MinStack;
 	p155() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
@@ -1455,6 +1459,18 @@ public:
 	vector<int> rightSideView(TreeNode * root);
 };
 
+class p200 : public Solutions
+{
+public:
+	p200() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void DFS(vector<vector<char>>& grid, int x, int y);
+	int numIslands(vector<vector<char>>& grid);
+	void test();
+	
+};
+
 class p206 : public Solutions
 {
 public:
@@ -1500,6 +1516,18 @@ public:
 	//void reverse(ListNode * h);
 	void reverse(ListNode *& h);
 	bool isPalindrome(ListNode * head);
+};
+
+class p257 : public Solutions
+{
+public:
+	p257() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	void test();
+	void sub(TreeNode * r, string & tmp, vector<string>& ans);
+	vector<string> binaryTreePaths(TreeNode * root);
 };
 
 class p309 : public Solutions
@@ -1551,6 +1579,28 @@ public:
 
 	int pathSum(TreeNode * root, int sum);
 
+	void test();
+};
+
+class p463 : public Solutions
+{
+public:
+	p463() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int DFS(vector<vector<int>>& grid, int x, int y);
+	int islandPerimeter(vector<vector<int>>& grid);
+	void test();
+};
+
+class p473 : public Solutions
+{
+public:
+	p473() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	bool DFS(vector<int>& nums, int a, int b, int c, int d, const int & base, int index);
+	bool makesquare(vector<int>& nums);
 	void test();
 };
 
@@ -1634,6 +1684,23 @@ public:
 
 };
 
+class p695 : public Solutions
+{
+public:
+	p695() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	int DFS(vector<vector<int>>& grid, int x, int y, int & ans);
+
+	int DFS(vector<vector<int>>& grid, int x, int y);
+
+	int maxAreaOfIsland(vector<vector<int>>& grid);
+
+	void test();
+
+};
+
 class p714 : public Solutions
 {
 public:
@@ -1645,6 +1712,22 @@ public:
 
 	void test();
 };
+
+
+class p733 : public Solutions
+{
+public:
+	p733() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	void dfs(vector<vector<int>>& img, int sr, int sc, const int & old, const int & n_colr);
+
+	vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int newColor);
+
+	void test();
+};
+
 
 class p889 : public Solutions
 {
