@@ -1394,6 +1394,27 @@ public:
 	void test();
 };
 
+class p160 : public Solutions
+{
+public:
+	p160() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	ListNode * getIntersectionNode(ListNode * headA, ListNode * headB);
+	void test();
+};
+
+class p164 : public Solutions
+{
+public:
+	p164() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	//ListNode * getIntersectionNode(ListNode * headA, ListNode * headB);
+	int maximumGap(vector<int>& nums);
+	void test();
+};
+
 class p169 : public Solutions
 {
 public:
@@ -1471,6 +1492,19 @@ public:
 	
 };
 
+class p202 : public Solutions
+{
+public:
+	p202() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	void test();
+
+	bool isHappy(int n);
+
+};
+
 class p206 : public Solutions
 {
 public:
@@ -1528,6 +1562,34 @@ public:
 	void test();
 	void sub(TreeNode * r, string & tmp, vector<string>& ans);
 	vector<string> binaryTreePaths(TreeNode * root);
+};
+
+class p263 : public Solutions
+{
+public:
+	p263() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	void test();
+	
+	bool isUgly(int num);
+
+};
+
+class p264 : public Solutions
+{
+public:
+	p264() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	int nthUglyNumber(int n);
+
+	void test();
+
+	//bool isUgly(int num);
+
 };
 
 class p309 : public Solutions
