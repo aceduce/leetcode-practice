@@ -1412,6 +1412,7 @@ public:
 	}
 	//ListNode * getIntersectionNode(ListNode * headA, ListNode * headB);
 	int maximumGap(vector<int>& nums);
+	int maximumGap_bucket(vector<int>& nums);
 	void test();
 };
 

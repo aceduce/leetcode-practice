@@ -15,7 +15,7 @@ int p264::nthUglyNumber(int n) {
 		if (next == next3) i3++;
 		if (next == next5) i5++;
 	}
-
+	return num[n - 1];
 }
 
 void p264::test() {
