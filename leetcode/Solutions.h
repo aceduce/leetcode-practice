@@ -14,6 +14,7 @@
 # include <ctype.h>
 # include <stack>
 #include <sstream>
+#include <numeric>
 //#include "Helper.h"
 # include "Struct.h"
 # include "BST.h"
@@ -1404,6 +1405,21 @@ public:
 	void test();
 };
 
+
+class p162 : public Solutions
+{
+public:
+	p162() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int subfind(vector<int>& nums);
+	int subfind(vector<int>& nums, int l, int r);
+	int findPeakElement(vector<int>& nums);
+	int findPeakElement_linear_scan(vector<int>& nums);
+	//ListNode * getIntersectionNode(ListNode * headA, ListNode * headB);
+	void test();
+};
+
 class p164 : public Solutions
 {
 public:
@@ -1416,6 +1432,29 @@ public:
 	void test();
 };
 
+class p165 : public Solutions
+{
+public:
+	p165() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	
+	int compareVersion(string version1, string version2);
+
+	void test();
+};
+
+class p167 : public Solutions
+{
+public:
+	p167() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	vector<int> twoSum(vector<int>& numbers, int target);
+
+	void test();
+};
 class p169 : public Solutions
 {
 public:
@@ -1506,6 +1545,19 @@ public:
 
 };
 
+class p204 : public Solutions
+{
+public:
+	p204() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	int countPrimes(int n);
+
+	void test();
+
+};
+
 class p206 : public Solutions
 {
 public:
@@ -1553,6 +1605,22 @@ public:
 	bool isPalindrome(ListNode * head);
 };
 
+class p239 : public Solutions
+{
+public:
+	class MonotonicQueue;
+	p239() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	vector<int> maxSlidingWindow(vector<int>& nums, int k);
+	vector<int> maxSlidingWindow_monotonic_queue(vector<int>& nums, int k);
+	vector<int> maxSlidingWindow_brute_force(vector<int>& nums, int k);
+	vector<int> maxSlidingWindow_multisetBFS(vector<int>& nums, int k);
+	void test();
+	
+};
+
 class p257 : public Solutions
 {
 public:
@@ -1584,13 +1652,18 @@ public:
 	p264() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
-
 	int nthUglyNumber(int n);
-
 	void test();
+};
 
-	//bool isUgly(int num);
-
+class p279 : public Solutions
+{
+public:
+	p279() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int numSquares(int n);
+	void test();
 };
 
 class p309 : public Solutions
@@ -1603,6 +1676,20 @@ public:
 	void test();
 };
 
+class p329 : public Solutions
+{
+public:
+	p329() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int DFS_w_mem(const vector<vector<int>>& matrix, int x, int y);
+	int longestIncreasingPath(vector<vector<int>>& matrix);
+	int longestIncreasingPath_DFS_bottom(vector<vector<int>>& matrix);
+	//int maxProfit(vector<int>& prices);
+	void test();
+private:
+	vector<vector<int>> DP;
+};
 
 class p337 : public Solutions
 {
@@ -1726,6 +1813,17 @@ public:
 
 	void test();
 	
+};
+
+
+class p640 : public Solutions
+{
+public:
+	p640() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	string solveEquation(string equation);
+	void test();
 };
 
 class p687 : public Solutions
