@@ -3,7 +3,7 @@
 #include "BST.h"
 
 int main() {
-	p329 *problem = new p329;
+	p205 *problem = new p205;
 	problem->test();
 	delete problem;
 	system("pause");

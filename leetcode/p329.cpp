@@ -37,8 +37,35 @@ int p329::longestIncreasingPath(vector<vector<int>>& matrix) {
 	return ans;
 }
 
+// need to sort the array first!!!!
+// scan from the largest number
 int p329::longestIncreasingPath_DFS_bottom(vector<vector<int>>& matrix) {
-
+	vector<pair<int, pair<int, int>>> cell; // pair: key ; pair: value, value indicates the x and y values
+	int n = matrix.size();
+	int m = matrix[0].size();
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			cell.push_back({ matrix[i][j], { i, j } });
+		}
+	}
+	int ans = 0;
+	vector<vector<int>> dp(n, vector<int>(m, 1)); // starting point is 1
+	sort(cell.rbegin(), cell.rend()); // from large to small
+	// DFS from the largest values
+	static int move[] = { 0, 1, 0, -1, 0 };
+	for (auto const & c : cell) {
+		int x = c.second.first;
+		int y = c.second.second;
+		for (int i = 0; i < 4; i++) {
+			int tx = x + move[i];
+			int ty = y + move[i + 1]; 
+			if (tx < 0 || tx >= n || ty >= m || ty < 0) continue;
+			if (matrix[x][y] >= matrix[tx][ty]) continue; // moving upward
+			dp[x][y] = max(dp[x][y], 1 + dp[tx][ty]); // max value + 1
+		}
+		ans = max(ans, dp[x][y]);
+	}
+	return ans;
 }
 
 

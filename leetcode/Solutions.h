@@ -15,6 +15,7 @@
 # include <stack>
 #include <sstream>
 #include <numeric>
+#include <cstddef>
 //#include "Helper.h"
 # include "Struct.h"
 # include "BST.h"
@@ -1444,6 +1445,18 @@ public:
 	void test();
 };
 
+class p166 : public Solutions
+{
+public:
+	p166() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	string fractionToDecimal(int numerator, int denominator);
+	string fractionToDecimal(long numerator, long denominator);
+	string fractionToDecimal(long long numerator, long long denominator);
+	void test();
+};
+
 class p167 : public Solutions
 {
 public:
@@ -1455,6 +1468,19 @@ public:
 
 	void test();
 };
+
+class p168 : public Solutions
+{
+public:
+	p168() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	string convertToTitle(int n);
+
+	void test();
+};
+
 class p169 : public Solutions
 {
 public:
@@ -1464,6 +1490,74 @@ public:
 
 	void test();
 	int majorityElement(vector<int>& nums);
+};
+
+class p171 : public Solutions
+{
+public:
+	p171() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	int titleToNumber(string s);
+
+	void test();
+
+};
+
+class p172 : public Solutions
+{
+public:
+	p172() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int trailingZeroes(int n);
+	void test();
+};
+
+class p173 : public Solutions
+{
+public:
+	p173() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	class BSTIterator;
+};
+
+class p174 : public Solutions
+{
+public:
+	p174() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int calculateMinimumHP(vector<vector<int>>& dungeon);
+	void test();
+};
+
+class p179 : public Solutions
+{
+public:
+	p179() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	string largestNumber(vector<int>& nums);
+	string helper(int input);
+	struct comp;
+	void test();
+};
+
+class p187 : public Solutions
+{
+public:
+	p187() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int calc(char a);
+	vector<string> findRepeatedDnaSequences(string s);
+	vector<string> findRepeatedDnaSequences_bits_manipul(string s);
+	void test();
+
 };
 
 class p188 : public Solutions
@@ -1487,6 +1581,28 @@ public:
 	}
 	void rotate(vector<int>& nums, int k);
 	void rotate_1(vector<int>& nums, int k);
+	void test();
+};
+
+class p190 : public Solutions
+{
+public:
+	p190() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	
+	uint32_t reverseBits(uint32_t n);
+	uint32_t reverseBits_naive(uint32_t n);
+	void test();
+};
+
+class p191 : public Solutions
+{
+public:
+	p191() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int hammingWeight(uint32_t n);
 	void test();
 };
 
@@ -1529,7 +1645,18 @@ public:
 	void DFS(vector<vector<char>>& grid, int x, int y);
 	int numIslands(vector<vector<char>>& grid);
 	void test();
-	
+};
+
+class p201 : public Solutions
+{
+public:
+	p201() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int rangeBitwiseAnd_TLE(int m, int n);
+	int rangeBitwiseAnd(int m, int n);
+	void test();
+
 };
 
 class p202 : public Solutions
@@ -1538,13 +1665,19 @@ public:
 	p202() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
-
 	void test();
-
 	bool isHappy(int n);
-
 };
 
+class p203 : public Solutions
+{
+public:
+	p203() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	ListNode * removeElements(ListNode * head, int val);
+};
 class p204 : public Solutions
 {
 public:
@@ -1558,6 +1691,17 @@ public:
 
 };
 
+class p205 : public Solutions
+{
+public:
+	p205() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	bool isIsomorphic_my(string s, string t);
+	bool isIsomorphic(string s, string t);
+	void test();
+};
+
 class p206 : public Solutions
 {
 public:
@@ -1565,6 +1709,53 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	ListNode* reverseList(ListNode* head);
+	void test();
+};
+
+class p207 : public Solutions
+{
+public:
+	p207() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	bool canFinish(int numCourses, vector<pair<int, int>>& prerequisites);
+	void test();
+};
+
+class p208 : public Solutions
+{
+public:
+	p208() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+
+class p209 : public Solutions
+{
+public:
+	p209() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p210 : public Solutions
+{
+public:
+	p210() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p211 : public Solutions
+{
+public:
+	p211() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
 	void test();
 };
 
@@ -1590,6 +1781,68 @@ public:
 	void test();
 };
 
+class p214 : public Solutions
+{
+public:
+	p214() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p215 : public Solutions
+{
+public:
+	p215() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p216 : public Solutions
+{
+public:
+	p216() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p217 : public Solutions
+{
+public:
+	p217() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p218 : public Solutions
+{
+public:
+	p218() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p219: public Solutions
+{
+public:
+	p219() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+class p220 : public Solutions
+{
+public:
+	p220() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
 
 class p234 : public Solutions
 {
@@ -1631,6 +1884,19 @@ public:
 	void test();
 	void sub(TreeNode * r, string & tmp, vector<string>& ans);
 	vector<string> binaryTreePaths(TreeNode * root);
+};
+
+class p258 : public Solutions
+{
+public:
+	p258() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	int addDigits(int num);
+
+	void test();
+	
 };
 
 class p263 : public Solutions
