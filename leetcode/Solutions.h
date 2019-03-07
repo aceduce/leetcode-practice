@@ -1720,6 +1720,7 @@ public:
 	}
 	bool canFinish(int numCourses, vector<pair<int, int>>& prerequisites);
 	void test();
+	class Solution_top_search;
 };
 
 class p208 : public Solutions
@@ -1728,6 +1729,7 @@ public:
 	p208() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	class Trie;
 	void test();
 };
 
@@ -1735,9 +1737,11 @@ public:
 class p209 : public Solutions
 {
 public:
+	class Solution_BST;
 	p209() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	int minSubArrayLen(int s, vector<int>& nums);
 	void test();
 };
 
@@ -1748,11 +1752,13 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	void test();
+	vector<int> findOrder(int numCourses, vector<pair<int, int>>& prerequisites);
 };
 
 class p211 : public Solutions
 {
 public:
+	class WordDictionary;
 	p211() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
@@ -1815,6 +1821,7 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	void test();
+	bool containsDuplicate(vector<int>& nums);
 };
 
 class p218 : public Solutions
@@ -1833,6 +1840,8 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	void test();
+	bool containsNearbyDuplicate(vector<int>& nums, int k);
+	bool containsNearbyDuplicate_slow(vector<int>& nums, int k);
 };
 
 class p220 : public Solutions
@@ -1842,6 +1851,7 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	void test();
+	bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t);
 };
 
 class p234 : public Solutions
@@ -1939,6 +1949,19 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	int maxProfit(vector<int>& prices);
+	void test();
+};
+
+class p310 : public Solutions
+{
+public:
+	p310() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	vector<int> findMinHeightTrees(int n, vector<pair<int, int>>& edges);
+	vector<int> findMinHeightTrees_my_peel(int n, vector<pair<int, int>>& edges);
+	vector<int> findMinHeightTrees_simpler_peel(int n, vector<pair<int, int>>& edges);
+	//int maxProfit(vector<int>& prices);
 	void test();
 };
 
@@ -2046,6 +2069,20 @@ public:
 	int diameterOfBinaryTree(TreeNode * root);
 
 	void test();
+};
+
+
+class p630 : public Solutions
+{
+public:
+	p630() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	int scheduleCourse(vector<vector<int>>& courses);
+
+	void test();
+	//bool judgeSquareSum(int c);
 };
 
 class p633 : public Solutions
