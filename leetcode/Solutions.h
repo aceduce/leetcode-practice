@@ -1850,8 +1850,27 @@ public:
 	p220() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	bool containsNearbyAlmostDuplicate_wrong(vector<int>& nums, int k, int t);
+	bool containsNearbyAlmostDuplicate_BucketSort(vector<int>& nums, int k, int t);
 	void test();
+	bool containsNearbyAlmostDuplicate_Bru(vector<int>& nums, int k, int t);
+	bool containsNearbyAlmostDuplicate_BFS(vector<int>& nums, int k, int t);
 	bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t);
+};
+
+class p221 : public Solutions
+{
+public:
+	p221() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	
+	int maximalSquare(vector<vector<char>>& matrix);
+
+	int maximalSquare_DP_Gen(vector<vector<char>>& matrix);
+
+	void test();
+	
 };
 
 class p234 : public Solutions
@@ -1965,6 +1984,16 @@ public:
 	void test();
 };
 
+class p327 : public Solutions
+{
+public:
+	p327() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int countRangeSum(vector<int>& nums, int lower, int upper);
+	void test();
+};
+
 class p329 : public Solutions
 {
 public:
@@ -2040,6 +2069,16 @@ public:
 	}
 	bool DFS(vector<int>& nums, int a, int b, int c, int d, const int & base, int index);
 	bool makesquare(vector<int>& nums);
+	void test();
+};
+
+class p493 : public Solutions
+{
+public:
+	p493() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int reversePairs(vector<int>& nums);
 	void test();
 };
 
