@@ -1887,6 +1887,17 @@ public:
 	bool isPalindrome(ListNode * head);
 };
 
+class p237 : public Solutions
+{
+public:
+	p237() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	void test();
+	void deleteNode(ListNode * node);
+};
+
 class p239 : public Solutions
 {
 public:
@@ -1948,6 +1959,17 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	int nthUglyNumber(int n);
+	void test();
+};
+
+class p268 : public Solutions
+{
+public:
+	p268() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	int missingNumber(vector<int>& nums);
+	//int nthUglyNumber(int n);
 	void test();
 };
 
@@ -2017,6 +2039,16 @@ public:
 	}
 	void test();
 	int rob(TreeNode * root);
+};
+
+class p344 : public Solutions
+{
+public:
+	p344() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	void reverseString(vector<char>& s);
 };
 
 class p367 : public Solutions
