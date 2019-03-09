@@ -1983,6 +1983,28 @@ public:
 	void test();
 };
 
+
+class p307: public Solutions
+{
+public:
+	class NumArray;
+	p307() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
+
+
+class p315: public Solutions
+{
+public:
+	p315() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	vector<int> countSmaller(vector<int>& nums);
+};
+
 class p309 : public Solutions
 {
 public:
@@ -2013,6 +2035,7 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	int countRangeSum(vector<int>& nums, int lower, int upper);
+	int MergeAndCount(vector<long>& sums, int start, int end, int lower, int upper);
 	void test();
 };
 
