@@ -2184,7 +2184,7 @@ public:
 	}
 
 	int scheduleCourse(vector<vector<int>>& courses);
-
+	class p630_Solution;
 	void test();
 	//bool judgeSquareSum(int c);
 };
