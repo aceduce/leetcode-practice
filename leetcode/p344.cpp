@@ -7,3 +7,5 @@ void p344::reverseString(vector<char>& s) {
 		s[s.size() - 1 - i] = ch;
 	}
 }
+
+

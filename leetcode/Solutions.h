@@ -2107,10 +2107,20 @@ public:
 class p493 : public Solutions
 {
 public:
+	struct BST_Node;
 	p493() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	p493::BST_Node * insert(long long val, p493::BST_Node * root);
+	int search(long long val, p493::BST_Node * root);
+	int reversePairs_BST(vector<int>& nums);
+	void update(vector<int>& BIT, int index, int val);
+	int query(vector<int>& BIT, int index);
+	int reversePairs_BIT(vector<int>& nums);
 	int reversePairs(vector<int>& nums);
+	int reversePairs_mutliset(vector<int>& nums);
+	void merge(vector<int>& A, int start, int mid, int end);
+	int mergesort_and_count(vector<int>& A, int start, int end);
 	void test();
 };
 
