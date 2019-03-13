@@ -1794,6 +1794,9 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	void test();
+	string shortestPalindrome(string s);
+	string shortestPalindrome_reverse(string s);
+	string shortestPalindrome_superset(string s);
 };
 
 class p215 : public Solutions
@@ -1803,6 +1806,7 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	void test();
+	int findKthLargest(vector<int>& nums, int k);
 };
 
 class p216 : public Solutions
@@ -1873,6 +1877,18 @@ public:
 	
 };
 
+
+class p233 : public Solutions
+{
+public:
+	p233() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+
+	int countDigitOne(int n);
+
+};
 class p234 : public Solutions
 {
 public:
@@ -1988,6 +2004,8 @@ class p307: public Solutions
 {
 public:
 	class NumArray;
+	class FenwickTree;
+	class SegmentTree;
 	p307() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
@@ -2001,8 +2019,15 @@ public:
 	p315() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
+	class Solution;
+	class BSTNode;
+	class Solution_BST;
 	void test();
 	vector<int> countSmaller(vector<int>& nums);
+	vector<int> countSmaller_BST(vector<int>& nums);
+	void update(vector<int>& BIT, int index, int val);
+	int query(vector<int>& BIT, int index);
+	vector<int> countSmaller_BIT(vector<int>& nums);
 };
 
 class p309 : public Solutions
@@ -2035,6 +2060,7 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	int countRangeSum(vector<int>& nums, int lower, int upper);
+	int countRangeSum_BST(vector<int>& nums, int lower, int upper);
 	int MergeAndCount(vector<long>& sums, int start, int end, int lower, int upper);
 	void test();
 };
@@ -2062,6 +2088,20 @@ public:
 	}
 	void test();
 	int rob(TreeNode * root);
+};
+
+class p338 : public Solutions
+{
+public:
+	p338() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	
+	vector<int> countBits(int num);
+
+	vector<int> countBits_naive(int num);
+
 };
 
 class p344 : public Solutions
@@ -2305,4 +2345,15 @@ public:
 	}
 	TreeNode * constructFromPrePost(vector<int>& pre, vector<int>& post);
 	void test();
+};
+
+class p997 : public Solutions
+{
+public:
+	p997() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	int findJudge_my(int N, vector<vector<int>>& trust);
+	int findJudge(int N, vector<vector<int>>& trust);
 };

@@ -1,6 +1,6 @@
 #include"Solutions.h"
 // solution insight; https://leetcode.com/problems/count-of-range-sum/discuss/238956/C%2B%2B-BST-solution-with-using-multiset-O(nlogn)
-int p327::countRangeSum(vector<int>& nums, int lower, int upper) {
+int p327::countRangeSum_BST(vector<int>& nums, int lower, int upper) {
 	multiset<long> BST;
 	int ans = 0;
 	long cur_sum = 0;
