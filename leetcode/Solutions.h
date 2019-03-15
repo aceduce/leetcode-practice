@@ -1877,6 +1877,40 @@ public:
 	
 };
 
+class p222 : public Solutions
+{
+public:
+	p222() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+
+	int countNodes_recur(TreeNode * root);
+
+	int countNodes_iterative(TreeNode * root);
+
+};
+
+class p225 : public Solutions
+{
+public:
+	p225() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	class MyStack;
+};
+
+class p226 : public Solutions
+{
+public:
+	p226() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	TreeNode * invertTree(TreeNode * root);
+	TreeNode * invertTree_iter(TreeNode * root);
+};
 
 class p233 : public Solutions
 {
