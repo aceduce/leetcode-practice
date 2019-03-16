@@ -2033,6 +2033,15 @@ public:
 	void test();
 };
 
+class p290: public Solutions
+{
+public:
+	p290() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	bool wordPattern(string pattern, string str);
+};
 
 class p307: public Solutions
 {
@@ -2343,6 +2352,28 @@ public:
 
 };
 
+class p701 : public Solutions
+{
+public:
+	p701() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	void test();
+	TreeNode * insertIntoBST(TreeNode * root, int val);
+};
+
+class p700 : public Solutions
+{
+public:
+	p700() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	void test();
+	TreeNode * searchBST(TreeNode * root, int val);
+};
+
 class p714 : public Solutions
 {
 public:
@@ -2370,6 +2401,17 @@ public:
 	void test();
 };
 
+class p863 : public Solutions
+{
+public:
+	p863() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	void dfs_map(TreeNode * ch, TreeNode * pa, unordered_map<TreeNode*, TreeNode*>& m);
+	vector<int> distanceK(TreeNode * root, TreeNode * target, int K);
+	class Solution2;
+};
 
 class p889 : public Solutions
 {
@@ -2379,6 +2421,19 @@ public:
 	}
 	TreeNode * constructFromPrePost(vector<int>& pre, vector<int>& post);
 	void test();
+};
+
+class p988 : public Solutions
+{
+public:
+	p988() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	void dfs(TreeNode * r, string & ans, string & tmp);
+	void dfs_w_level(TreeNode * r, string & ans, string & tmp, int lv, int & lvm);
+	//void dfs_w_level(TreeNode * r, string & ans, string & tmp, int & lv, int & lvm);
+	string smallestFromLeaf(TreeNode * root);
 };
 
 class p997 : public Solutions
