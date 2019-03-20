@@ -1806,7 +1806,10 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	void test();
+	int partition(vector<int>& nums, int left, int right);
+	void swap(vector<int>& nums, int i, int j);
 	int findKthLargest(vector<int>& nums, int k);
+	int findKthLargest_pp(vector<int>& nums, int k);
 };
 
 class p216 : public Solutions
@@ -1835,6 +1838,9 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	void test();
+	class Solution;
+	class Solution_BST;
+	vector<pair<int, int>> getSkyline(vector<vector<int>>& buildings);
 };
 
 class p219: public Solutions
@@ -1910,6 +1916,16 @@ public:
 	void test();
 	TreeNode * invertTree(TreeNode * root);
 	TreeNode * invertTree_iter(TreeNode * root);
+};
+
+class p228 : public Solutions
+{
+public:
+	p228() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	vector<string> summaryRanges(vector<int>& nums);
 };
 
 class p233 : public Solutions
@@ -2168,6 +2184,18 @@ public:
 	bool isPerfectSquare(int num);
 };
 
+
+class p414 : public Solutions
+{
+public:
+	p414() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	void test();
+	int thirdMax(vector<int>& nums);
+};
+
 class p437 : public Solutions
 {
 public:
@@ -2316,6 +2344,16 @@ public:
 	void test();
 };
 
+class p665 : public Solutions
+{
+public:
+	p665() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	bool checkPossibility(vector<int>& nums);
+};
+
 class p687 : public Solutions
 {
 public:
@@ -2421,6 +2459,16 @@ public:
 	}
 	TreeNode * constructFromPrePost(vector<int>& pre, vector<int>& post);
 	void test();
+};
+
+class p968 : public Solutions
+{
+public:
+	p968() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	class Solution_DFS_Greedy;
 };
 
 class p988 : public Solutions
