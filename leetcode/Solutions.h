@@ -1838,7 +1838,7 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	void test();
-	class Solution;
+	class Solution_Heap;
 	class Solution_BST;
 	vector<pair<int, int>> getSkyline(vector<vector<int>>& buildings);
 };
