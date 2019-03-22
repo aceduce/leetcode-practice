@@ -1819,6 +1819,7 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	void test();
+	class Solution_backtracking;
 };
 
 class p217 : public Solutions
@@ -1897,6 +1898,17 @@ public:
 
 };
 
+class p223 : public Solutions
+{
+public:
+	p223() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	class Solution_my;
+	class Solution;
+};
+
 class p225 : public Solutions
 {
 public:
@@ -1926,6 +1938,16 @@ public:
 	}
 	void test();
 	vector<string> summaryRanges(vector<int>& nums);
+};
+
+class p230 : public Solutions
+{
+public:
+	p230() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	class Solution;
 };
 
 class p233 : public Solutions
@@ -2216,6 +2238,16 @@ public:
 	void test();
 };
 
+class p450 : public Solutions
+{
+public:
+	p450() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	class Solution;
+	void test();
+};
+
 class p463 : public Solutions
 {
 public:
@@ -2258,6 +2290,19 @@ public:
 	void test();
 };
 
+
+class p501 : public Solutions
+{
+public:
+	p501() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	class Solution_BF;
+	void test();
+};
+
+
 class p516 : public Solutions
 {
 public:
@@ -2286,6 +2331,29 @@ public:
 	void test();
 };
 
+class p563 : public Solutions
+{
+public:
+	p563() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	class Solution;
+};
+
+
+class p572 : public Solutions
+{
+public:
+	p572() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	class Solution;
+	class Solution_string;
+	class Solution_my; // not very effcient
+	void test();
+};
 
 class p630 : public Solutions
 {
@@ -2353,6 +2421,17 @@ public:
 	void test();
 	bool checkPossibility(vector<int>& nums);
 };
+
+class p671 : public Solutions
+{
+public:
+	p671() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	class Solution;
+	void test();
+};
+
 
 class p687 : public Solutions
 {
@@ -2439,6 +2518,16 @@ public:
 	void test();
 };
 
+class p836 : public Solutions
+{
+public:
+	p836() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	class Solution;
+	void test();
+
+};
 class p863 : public Solutions
 {
 public:
@@ -2458,6 +2547,16 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	TreeNode * constructFromPrePost(vector<int>& pre, vector<int>& post);
+	void test();
+};
+
+class p897 : public Solutions
+{
+public:
+	p897() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	class Solution;
 	void test();
 };
 
