@@ -2317,17 +2317,27 @@ public:
 	void test();
 };
 
+class p538 :public Solutions
+{
+public:
+	p538() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	class Solution;
+	class Solution_ReverseStackDFS;
+	class Solution_RightFirst;
+
+};
+
 class p543 : public Solutions
 {
 public:
 	p543() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
-
 	int helper(TreeNode * r, int & ans);
-
 	int diameterOfBinaryTree(TreeNode * root);
-
 	void test();
 };
 
@@ -2448,6 +2458,17 @@ public:
 
 	int longestUnivaluePath(TreeNode * root);
 
+	void test();
+
+};
+
+class p690 : public Solutions
+{
+public:
+	p690() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	class Solution;
 	void test();
 
 };
@@ -2581,6 +2602,16 @@ public:
 	void dfs_w_level(TreeNode * r, string & ans, string & tmp, int lv, int & lvm);
 	//void dfs_w_level(TreeNode * r, string & ans, string & tmp, int & lv, int & lvm);
 	string smallestFromLeaf(TreeNode * root);
+};
+
+class p993:public Solutions
+{
+public:
+	p993() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	class Soution;
 };
 
 class p997 : public Solutions
