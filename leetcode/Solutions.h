@@ -2081,6 +2081,17 @@ public:
 	bool wordPattern(string pattern, string str);
 };
 
+class p297 : public Solutions
+{
+public:
+	p297() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	class Codec_Binary;
+	class Codec_String;
+};
+
 class p307: public Solutions
 {
 public:
@@ -2238,6 +2249,16 @@ public:
 	void test();
 };
 
+class p449 : public Solutions
+{
+public:
+	p449() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	class Codec;
+	void test();
+};
+
 class p450 : public Solutions
 {
 public:
@@ -2302,6 +2323,16 @@ public:
 	void test();
 };
 
+class p508 : public Solutions
+{
+public:
+	p508() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	class Solution;
+	void test();
+};
 
 class p516 : public Solutions
 {
