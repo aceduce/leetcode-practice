@@ -4,7 +4,7 @@
 // method 2: serialize into long integer
 // https://www.youtube.com/watch?v=JLK92dbTt8k
 // used for method 1
-class Solution {
+class p652::Solution1 {
 public:
 	// use pre-order pattern
 	string serialize(TreeNode * r, unordered_map<string, int> &counts, vector<TreeNode *> & ans) {
@@ -25,7 +25,7 @@ public:
 
 // used for method 2
 // cannot passed as left shift negative values
-class Solution {
+class p652::Solution2 {
 public:
 	// use pre-order pattern
 	int serialize(TreeNode * r,

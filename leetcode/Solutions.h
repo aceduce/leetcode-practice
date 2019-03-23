@@ -2453,6 +2453,17 @@ public:
 	void test();
 };
 
+class p652 : public Solutions
+{
+public:
+	p652() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	class Solution1;
+	class Solution2;
+};
+
 class p665 : public Solutions
 {
 public:
