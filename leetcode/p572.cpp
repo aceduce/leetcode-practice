@@ -72,7 +72,7 @@ public:
 
 class p572::Solution {
 public:
-	bool isSubtree(TreeNode s, TreeNode t) {
+	bool isSubtree(TreeNode * s, TreeNode * t) {
 		return traverse(s, t);
 	}
 	bool equals(TreeNode * x, TreeNode * y)

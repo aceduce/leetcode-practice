@@ -2259,6 +2259,16 @@ public:
 	void test();
 };
 
+class p449 : public Solutions
+{
+public:
+	p449() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	class Codec_fast;
+	void test();
+};
+
 class p450 : public Solutions
 {
 public:
@@ -2405,6 +2415,18 @@ public:
 
 	int scheduleCourse(vector<vector<int>>& courses);
 	class p630_Solution;
+	void test();
+	//bool judgeSquareSum(int c);
+};
+
+
+class p623 : public Solutions
+{
+public:
+	p623() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	class Solution_BFS_my;
 	void test();
 	//bool judgeSquareSum(int c);
 };
@@ -2621,6 +2643,17 @@ public:
 	}
 	class Solution;
 	void test();
+};
+
+
+class p958 : public Solutions
+{
+public:
+	p958() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	class Solution_my;
 };
 
 class p968 : public Solutions
