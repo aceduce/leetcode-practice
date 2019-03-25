@@ -2104,6 +2104,28 @@ public:
 	void test();
 };
 
+class p300 : public Solutions
+{
+public:
+	p300() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	class Solution_iterative;
+	class Solution_recursive;
+};
+
+class p307 : public Solutions
+{
+public:
+	class NumArray;
+	class FenwickTree;
+	class SegmentTree;
+	p307() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+};
 
 class p315: public Solutions
 {
@@ -2170,6 +2192,17 @@ public:
 	void test();
 private:
 	vector<vector<int>> DP;
+};
+
+
+class p334 : public Solutions
+{
+public:
+	p334() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	class Solution;
 };
 
 class p337 : public Solutions
@@ -2506,6 +2539,27 @@ public:
 	void test();
 };
 
+class p673 : public Solutions
+{
+public:
+	p673() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	class Solution;
+	class Solution_iter;
+	void test();
+};
+
+class p674 : public Solutions
+{
+public:
+	p674() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	class Solution;
+	void test();
+};
+
 
 class p687 : public Solutions
 {
@@ -2588,6 +2642,16 @@ public:
 	void test();
 };
 
+class p718 : public Solutions
+{
+public:
+	p718() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	class Solution_DP;
+	void test();
+};
 
 class p733 : public Solutions
 {
