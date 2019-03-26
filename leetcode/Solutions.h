@@ -2250,6 +2250,17 @@ public:
 	string reverseVowels(string s);
 };
 
+class p354 : public Solutions
+{
+public:
+	p354() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	class Solution_wBST;
+	class Solution_BF_wDP;
+};
+
 class p367 : public Solutions
 {
 public:
@@ -2271,6 +2282,17 @@ public:
 
 	void test();
 	int thirdMax(vector<int>& nums);
+};
+
+class p416 : public Solutions
+{
+public:
+	p416() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	void test();
+	bool canPartition(vector<int>& nums);
 };
 
 class p437 : public Solutions
@@ -2623,6 +2645,19 @@ public:
 
 };
 
+
+class p698 : public Solutions
+{
+public:
+	p698() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	
+	void test();
+	class Solution;
+	class Solution_DP_memo;
+};
+
 class p690 : public Solutions
 {
 public:
@@ -2708,6 +2743,16 @@ public:
 	vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int newColor);
 
 	void test();
+};
+
+class p790 : public Solutions
+{
+public:
+	p790() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	int numTilings(int N);
 };
 
 class p836 : public Solutions
