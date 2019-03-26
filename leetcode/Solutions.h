@@ -2334,6 +2334,16 @@ public:
 	void test();
 };
 
+class p491 : public Solutions
+{
+public:
+	p491() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	
+	void test();
+	vector<vector<int>> findSubsequences(vector<int>& nums);
+};
 class p493 : public Solutions
 {
 public:
@@ -2506,6 +2516,17 @@ public:
 	}
 	string solveEquation(string equation);
 	void test();
+};
+
+class p646 : public Solutions
+{
+public:
+	p646() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	int findLongestChain(vector<vector<int>>& pairs);
+	int findLongestChain_greedy(vector<vector<int>>& pairs);
 };
 
 class p652 : public Solutions
