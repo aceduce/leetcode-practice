@@ -2239,6 +2239,17 @@ public:
 	void reverseString(vector<char>& s);
 };
 
+class p345 : public Solutions
+{
+public:
+	p345() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	class Solution;
+	string reverseVowels(string s);
+};
+
 class p367 : public Solutions
 {
 public:
@@ -2380,6 +2391,17 @@ class p508 : public Solutions
 {
 public:
 	p508() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	class Solution;
+	void test();
+};
+
+class p513 : public Solutions
+{
+public:
+	p513() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 
