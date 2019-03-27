@@ -2092,17 +2092,7 @@ public:
 	class Codec_String;
 };
 
-class p307: public Solutions
-{
-public:
-	class NumArray;
-	class FenwickTree;
-	class SegmentTree;
-	p307() {
-		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
-	}
-	void test();
-};
+
 
 class p300 : public Solutions
 {
@@ -2166,6 +2156,17 @@ public:
 	//int maxProfit(vector<int>& prices);
 	void test();
 };
+
+class p324 : public Solutions
+{
+public:
+	p324() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	class Solution;
+	void test();
+};
+
 
 class p327 : public Solutions
 {
@@ -2261,6 +2262,17 @@ public:
 	class Solution_BF_wDP;
 };
 
+class p363 : public Solutions
+{
+public:
+	p363() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	class Solution_BF;
+	class Solution_Opt;
+};
+
 class p367 : public Solutions
 {
 public:
@@ -2315,15 +2327,7 @@ public:
 	void test();
 };
 
-class p449 : public Solutions
-{
-public:
-	p449() {
-		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
-	}
-	class Codec;
-	void test();
-};
+
 
 class p449 : public Solutions
 {
@@ -2331,7 +2335,9 @@ public:
 	p449() {
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
-	class Codec_fast;
+	class Codec;
+	class Codec_fast1;
+	class Codec_fast2;
 	void test();
 };
 
@@ -2745,6 +2751,16 @@ public:
 	void test();
 };
 
+
+class p746 : public Solutions
+{
+public:
+	p746() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	class Solution;
+	void test();
+};
 class p790 : public Solutions
 {
 public:

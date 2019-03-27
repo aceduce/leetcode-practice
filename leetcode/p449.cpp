@@ -1,5 +1,5 @@
 #include"Solutions.h"
-class p449::Codec_fast {
+class p449::Codec_fast2 {
 	// Author: Huahua
 	// Runtime: 19 ~ 26 ms (<93.31%)
 	
@@ -86,7 +86,7 @@ private:
 // fatest
 // Author: Huahua
 // Runtime: 19 ~ 26 ms (<93.31%)
-class Codec_fast {
+class p449::Codec_fast1 {
 public:
 
 	// Encodes a tree to a single string.
