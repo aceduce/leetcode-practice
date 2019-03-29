@@ -4,6 +4,7 @@
 # include<iostream>
 # include<queue>
 # include<list>
+# include <array>
 # include<set>
 # include<unordered_set>
 # include<unordered_map>
@@ -1975,6 +1976,27 @@ public:
 	bool isPalindrome(ListNode * head);
 };
 
+
+class p235 : public Solutions
+{
+public:
+	p235() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	class Solution;
+};
+
+class p236 : public Solutions
+{
+public:
+	p236() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	class Solution;
+};
+
 class p237 : public Solutions
 {
 public:
@@ -2071,6 +2093,16 @@ public:
 	void test();
 };
 
+class p282 : public Solutions
+{
+public:
+	p282() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	class Solution;
+	void test();
+};
+
 class p283 : public Solutions
 {
 public:
@@ -2164,6 +2196,17 @@ public:
 	vector<int> findMinHeightTrees_my_peel(int n, vector<pair<int, int>>& edges);
 	vector<int> findMinHeightTrees_simpler_peel(int n, vector<pair<int, int>>& edges);
 	//int maxProfit(vector<int>& prices);
+	void test();
+};
+
+
+class p312 : public Solutions
+{
+public:
+	p312() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	class Solution;
 	void test();
 };
 
@@ -2413,6 +2456,16 @@ public:
 	void test();
 };
 
+class p494 : public Solutions
+{
+public:
+	p494() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	class Solution;
+	class Solution_BF;
+	void test();
+};
 
 class p501 : public Solutions
 {
@@ -2492,6 +2545,19 @@ public:
 		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
 	}
 	class Solution;
+	class Solution_Opt1;
+	class Solution_Opt2;
+	void test();
+};
+
+class p559 : public Solutions
+{
+public:
+	p559() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	class Solution;
+	class Node;
 	void test();
 };
 
@@ -2809,8 +2875,8 @@ public:
 	}
 	class Solution;
 	void test();
-
 };
+
 class p863 : public Solutions
 {
 public:
@@ -2821,6 +2887,16 @@ public:
 	void dfs_map(TreeNode * ch, TreeNode * pa, unordered_map<TreeNode*, TreeNode*>& m);
 	vector<int> distanceK(TreeNode * root, TreeNode * target, int K);
 	class Solution2;
+};
+
+class p872 : public Solutions
+{
+public:
+	p872() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	class Solution;
+	void test();
 };
 
 class p889 : public Solutions
