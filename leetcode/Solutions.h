@@ -2147,6 +2147,17 @@ public:
 	class Solution_recursive;
 };
 
+class p301 : public Solutions
+{
+public:
+	p301() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	void test();
+	class Solution;
+};
+
+
 class p307 : public Solutions
 {
 public:
@@ -2337,6 +2348,16 @@ public:
 	bool isPerfectSquare(int num);
 };
 
+class p404 : public Solutions
+{
+public:
+	p404() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	void test();
+	class Solution;
+};
 
 class p414 : public Solutions
 {
@@ -2423,6 +2444,16 @@ public:
 	}
 	bool DFS(vector<int>& nums, int a, int b, int c, int d, const int & base, int index);
 	bool makesquare(vector<int>& nums);
+	void test();
+};
+
+class p488 : public Solutions
+{
+public:
+	p488() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	class Solution;
 	void test();
 };
 
