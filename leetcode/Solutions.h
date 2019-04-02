@@ -2024,6 +2024,18 @@ public:
 	
 };
 
+class p240 : public Solutions
+{
+public:
+	p240() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	class Solution;
+	class Solution_DivideConquer;
+	void test();
+};
+
 class p257 : public Solutions
 {
 public:
@@ -2758,6 +2770,17 @@ public:
 	void test();
 };
 
+class p684 : public Solutions
+{
+public:
+	p684() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+
+	void test();
+	class Solution_DFS;
+	class Solution_uF;
+};
 
 class p687 : public Solutions
 {
