@@ -1422,6 +1422,16 @@ public:
 	void test();
 };
 
+class p163 : public Solutions
+{
+public:
+	p163() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	class Solution;
+	void test();
+};
+
 class p164 : public Solutions
 {
 public:
@@ -2231,6 +2241,17 @@ public:
 	}
 	class Solution;
 	void test();
+};
+
+class p322 : public Solutions
+{
+public:
+	p322() {
+		cout << "Question # : " << ((string)typeid(this).name()).substr(7, 3) << endl;
+	}
+	class Solution_DFS;
+	class Solution_DP;
+	class Solution_BF;
 };
 
 class p324 : public Solutions
